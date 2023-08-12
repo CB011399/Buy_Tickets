@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+
+    <link href="link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Foldit:wght@100;300;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buy Tickets</title>
+    
+  </head>
+  <body class="light">
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="tickets5.html"></a>Home</li>
+        <li><a href="details3.html"></a>Details</li>
+        <li><a href="payment3.html"></a>Payment</li>
+        <li><a href="confirmation1.html"></a>Confirmation</li>
+        
+      </ul>
+      <img src="./menu button.png" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Buy Tickets</h1>
+      </div>
+    </header>
+    <h1 class="h1">Enter your payment details!</h1>
+
+    <form id="purchaseForm" onsubmit="return validateForm()">
+        <!-- Your existing form fields -->
+      
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required />
+        <span id="cardNumberError" class="error-message"></span>
+      
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" required />
+        <span id="expiryDateError" class="error-message"></span>
+      
+        <label for="cvc">CVC/CNN:</label>
+        <input type="text" id="cvc" required />
+        <span id="cvcError" class="error-message"></span>
+      
+        <label for="nameOnCard">Name on Card:</label>
+        <input type="text" id="nameOnCard" required />
+        <span id="nameOnCardError" class="error-message"></span>
+        <h5>Summary Table</h5>
+    <table id="summaryTable">
+      
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td id="name"></td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td id="date"></td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td id="time-slot">Time</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td id="duration">Duration</td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td id="mobile">Mobile</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td id="email">Email</td>
+        </tr>
+        <tr>
+          <td>Tickets</td>
+          <td>Charges</td>
+        </tr>
+        
+        <tr>
+          <td id="sl-adult-qty"></td>
+          <td id="sl-adult-amount"></td>
+        </tr>
+        <tr>
+          <td id="sl-child-qty"></td>
+          <td id="sl-child-amount"></td>
+        </tr>
+        <tr>
+          <td id="foreigner-adult-qty"></td>
+          <td id="foreigner-adult-amount"></td>
+        </tr>
+        <tr>
+          <td id="foreigner-child-qty"></td>
+          <td id="foreigner-child-amount"></td>
+        </tr>
+        <tr>
+          <td id="infant-qty"></td>
+          <td id="infant-amount">Free</td>
+        </tr>
+
+        <tr>
+          <td>Total Payable</td>
+          <td id="total"></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    <button type="submit" id="purchaseButton" disabled>
+       <amount>
+    </button>
+  </form>
+  <script src="payment3.js"></script>
+</body>
+</html>
+
+      
+        
+    
+   

@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+    
+    
+    
+}
+.header{
+    width:100%;
+    min-height:80vh;
+    background-position: center;
+    
+    background-size:cover;
+    position: relative;
+    font-family:'poppins',sans-serif;
+    
+    background-image: url(./threats.jpeg);
+    filter:brightness(100%);}
+    
+    nav{
+        display:flex;
+        padding:16px 30px;
+    }
+    nav img{
+        width:120px;
+        font-size:30px;
+    }
+    .nav-links{
+        flex:1;
+        text-align: right;
+    
+    }
+    .nav-links ul li{
+        list-style: none;
+        display:inline-block;
+        padding: 15px 13px;
+        position:relative;
+        
+    }
+    .nav-links ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    .nav-links ul li::after{
+        content:'';
+        width:0%;
+        height:2px;
+        background:lightblue;
+        display:block;
+        margin:block;
+        transition:0.5s;
+    
+    }
+    .nav-links ul li:hover::after{
+        width:100%;
+    
+    }
+    .nav-links ul li ul{
+       display:none;
+       position:absolute;
+       background-color:lightskyblue;
+       padding:15px 13px;
+    
+    }
+    .nav-links ul li ul li{
+        float:none;
+    }
+    .nav-links ul li:hover ul{
+        display:block;
+    }
+    
+    
+    
+    .text-box{
+        width:90%;
+        color:#fff;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 50px;
+        font-family: 'Cinzel', serif;
+        
+    
+        
+    
+    }
+    .text-box p{
+        margin:10px 0 40px;
+        font-size: 14px;
+    }
+
+    .row1 h2{
+        text-align:center ;
+        
+        
+        margin-top: 100px;
+        font-family: 'Cinzel', serif;
+        font-weight: 800px;
+        font-style: bold;
+        margin-right:5px;
+        margin-top: 70px;
+        
+        }
+    
+     .row1 p{
+         font-size: 15px;
+            
+        
+            
+        
+         text-align: center;
+         margin-left:200px;
+         margin-right: 200px;
+            
+            
+        display: inline-block;
+         margin-top: 50px;
+        font-family:'poppins',sans-serif;
+        text-align: justify;
+         }
+
+      .col1 img{
+            width:300px;
+           height:300px;
+              
+              
+              
+             
+             
+             
+           object-fit:cover;
+          align-items: center;
+           justify-content: center;
+           margin-left: 50px;
+           margin-right: 30px;
+           
+           
+        
+          }
+
+     .col1{
+            display:flex;
+            justify-content:center;
+            text-align:center;
+           margin-top: 50px;}
+
+    .row2 h3{
+            
+            font-family:'Cinzel', serif;
+            font-weight:300px;
+            font-style:bold;
+            
+            
+            padding:15px 10px;
+            margin-left: 350px;
+            margin-top: 50px;
+            
+
+            
+    
+        }
+    .row2 p{
+            font-size: 13px;
+            
+        
+            
+        
+            text-align: center;
+            
+            
+            display: inline-block;
+            margin-top: 50px;
+            font-family:'poppins',sans-serif;
+            text-align: justify;
+            margin-left:200px;
+            border:2px solid black;
+            background-color: gray;
+            
+        
+            }
+
+     .col2 img{
+        width:400px;
+        height:50%;
+        padding:10px 40px;
+        margin-top: 220px;
+        margin-left: 200px;
+        margin-right:30px;
+              }
+
+    .section2{
+                display:grid;
+                 grid-template-columns: repeat(2,2fr);
+                 grid-gap:1.5rem;
+                    
+                
+                }
+                .section3{
+                    display:grid;
+                    grid-template-columns:repeat(2,2fr);
+                    grid-gap:1.5rem;
+                }
+            
+                .col3 h3{
+                    margin-top:50px;
+                    font-family:'Cinzel', serif;
+                    font-weight:300px;
+                    font-style:bold;
+                    
+                    
+                    padding:15px 10px;
+                    
+                    margin-bottom: 30px;
+                    margin-left:100px ;
+                    
+                    
+            
+                    
+            
+                }
+                .col3 p{
+                    font-size: 13px;
+                
+                    
+                
+                    
+                
+                    
+                    
+                    
+                    display: inline-block;
+                    
+                    font-family:'poppins',sans-serif;
+                    text-align: justify;
+                
+                    
+                
+                    }
+        .row3 img{
+            width:400px;
+            height:80%;
+            margin-top:50px;
+            margin-left: 80px;
+            margin-right: 50px;
+        }
+        .col3{
+            margin-right:20px;
+            border: 2px solid black;
+            background-color: beige;
+            
+        }
+        .row4 h3{
+            
+            font-family:'Cinzel', serif;
+            font-weight:300px;
+            font-style:bold;
+            
+            
+            padding:15px 10px;
+            margin-left: 320px;
+            margin-top: 50px;
+            
+
+            
+    
+        }
+        .row4 p{
+            font-size: 13px;
+            
+        
+            
+        
+            text-align: center;
+            
+            
+            display: inline-block;
+            margin-top: 50px;
+            font-family:'poppins',sans-serif;
+            text-align: justify;
+            margin-left:200px;
+            border:2px solid black;
+            background-color: gray;
+            
+        
+            }            
+        .col4 img{
+            width:400px;
+            height:60%;
+            padding:10px 40px;
+            margin-top: 170px;
+            margin-left: 200px;
+            margin-right:30px;
+                  }            
+                 
+               
+         .section4{
+              display:grid;
+              grid-template-columns: repeat(2,2fr);
+             grid-gap:1.5rem;
+                        
+                    
+                    }         
+        .section5{
+                display:grid;
+                grid-template-columns:repeat(2,2fr);
+                grid-gap:1.5rem;
+                    }    
+        .col5 h3{
+             margin-top:50px;
+             font-family:'Cinzel', serif;
+             font-weight:300px;
+             font-style:bold;
+                        
+                        
+             padding:15px 10px;
+                        
+             margin-bottom: 30px;
+             margin-left:100px ;
+                        
+                        
+                
+                        
+                
+                    }    
+         .col5 p{
+             font-size: 13px;
+                    
+                        
+                    
+                        
+                    
+                        
+                        
+                        
+             display: inline-block;
+                        
+            font-family:'poppins',sans-serif;
+            text-align: justify;
+                    
+                        
+                    
+                        } 
+        .row5 img{
+            width:400px;
+             height:80%;
+            margin-top:50px;
+             margin-left: 80px;
+             margin-right: 50px;
+                        } 
+                        
+                        
+        .col5{
+             margin-right:20px;
+             border: 2px solid black;
+             background-color: beige;
+             margin-top:30px ;
+                            
+                        }
+
+
+        
+
+        
+                        
+                            
+                            
+         
+                                      
+                        
+                                              
+                                     
+                        
+            

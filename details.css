@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./tickets.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  color: #fff;
+  font-size: 25px;
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.nav-bar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 30px;
+}
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: "poppins,sans-serif";
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 35px;
+  text-align: center;
+}
+option {
+  margin-top: 20%;
+  font-size: 15px;
+  width: 10px;
+
+  background-color: whitesmoke;
+  font-family: "poppins,sans-serif";
+}
+
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-bar {
+    padding: 0;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    margin-top: -900px;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  #summaryTable {
+    margin-left: 150px;
+    width: 40%;
+    margin-right: 100px;
+  }
+  #purchaseForm {
+    max-width: 200px;
+  }
+}
+
+/* Reset default margin and padding */
+/* Style for the summary table */
+#summaryTable {
+  margin-top: 20px;
+  width: 30%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-left: 480px;
+}
+
+#summaryTable th,
+#summaryTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#summaryTable th {
+  background-color: #f2f2f2;
+}
+
+/* Style for the table header */
+#summaryTable thead tr th {
+  font-weight: bold;
+}
+
+/* Style for table rows */
+#summaryTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#summaryTable tbody tr:hover {
+  background-color: #ddd;
+}
