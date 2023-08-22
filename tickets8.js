@@ -122,7 +122,8 @@ function getAmount(category, peakCount, normalCount, qty) {
 }
 
 document.getElementById("continue-btn").addEventListener("click", () => {
-  window.location.href = "./details3.html";
+  
+  console.log("hello world");
 
   saveName();
 });
